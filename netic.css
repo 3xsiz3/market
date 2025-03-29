@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 10px;
+    font-family: Raleway, 'Times New Roman', Times, serif;
+}
+body{
+    font-size:1.4rem;
+    background: linear-gradient(to right, #6492c0, #e3f2fd);
+}
+.icon {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.image{
+    border-radius: 50%;
+    width: 30%;
+} 
+p {
+    font-size: 2rem;
+    color: black;
+    text-align: right;
+    box-shadow: 1px black solid;
+}
+.market {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(104, 67, 67, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+} 
+.card:hover  {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    width: 150px; 
+    height: auto;
+}
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #5282b4, #007bff); 
+    border: none;
+    border-radius: 8px; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(to bottom, #5c90c7, #0056b3); 
+}
+
+button:active {
+    transform: scale(0.95); /* Лёгкое сжатие при клике */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.fateev {
+    padding: 0 0 0 2%;
+    font-size: 2.5rem;
+}
+header {
+    color: #0a3057;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+header p {
+    text-align: center;
+}
+.shop:hover {
+    text-decoration: underline;
+}
+
+.cart-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Расстояние между иконками */
+    margin-top: 2rem; /* Отступ сверху от карточек */
+}
+
+.cart-icons i {
+    font-size: 2rem; /* Размер иконки */
+    color: #333; /* Цвет иконки */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.cart-icons i:hover {
+    transform: scale(1.2); /* Эффект увеличения при наведении */
+    color: #ff5733; /* Цвет при наведении */
+}
+
