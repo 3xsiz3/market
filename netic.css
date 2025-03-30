@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0.5rem;
 }
 html{
     font-size: 10px;
@@ -13,19 +14,90 @@ body{
 }
 .icon {
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    
+    align-items: flex-start;
+    gap: 10px;
 }
-.image{
-    border-radius: 50%;
+
+.info {
+    text-align: left;
+    font-size: 1.6rem;
+}
+.image {
     width: 30%;
-} 
+    height: auto;
+    border-radius: 30%;
+}
+
 p {
     font-size: 2rem;
     color: black;
     text-align: right;
     box-shadow: 1px black solid;
 }
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #0a3057;
+    padding: 1rem 3rem;
+    position: relative;
+    border-radius: 20px;
+}
+.top-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.top-menu ul li {
+    position: realtive;
+}
+
+.top-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.top-menu a:hover { 
+    color: #5c90c7;
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background: white;
+    color: black;
+    width: 250px;
+    height: 90px;
+    box-shadow: 0px 4px 6px black;
+    border-radius: 30px;
+    padding: 1rem;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.top-menu i {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.top-menu i:hover {
+    color: orange;
+}
+
 .market {
     display: flex;
     justify-content: center;
@@ -48,7 +120,7 @@ p {
 }
 
 .image {
-    width: 150px; 
+    width: 90px; 
     height: auto;
 }
 button {
@@ -74,10 +146,7 @@ button:active {
     transform: scale(0.95);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.fateev {
-    padding: 0 0 0 2%;
-    font-size: 2.5rem;
-}
+
 header {
     color: #0a3057;
     font-size: 2rem;
