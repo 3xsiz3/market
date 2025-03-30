@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
-  <title>Нетик | HTML дизайн</title>
-  <link rel="stylesheet" href = "style.css">
-
+  <title>Market</title>
+  <link rel="stylesheet" href = "netic.css">
+  <script src="https://kit.fontawesome.com/b8ffaffb32.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <div class = "icon"><img src="icon/title.jpg" alt = "Icon" class = "image"><p class = "fateev">Фатеев Артём. 19 лет. Студент</p></div>
@@ -16,19 +16,19 @@
     </header>
     <div class="market">
         <div class="card">
-            <img src="/images/icon-1.png" alt="Icon" class="image">
+            <img src="images/icon-1.png" alt="Icon" class="image">
             <p>Скорость</p>
             <button>Купить</button>
         </div>
     
         <div class="card">
-            <img src="/images/icon-2.png" alt="Icon" class="image">
+            <img src="images/icon-2.png" alt="Icon" class="image">
             <p>Гарантия</p>
             <button>Купить</button>
         </div>
     
         <div class="card">
-            <img src="/images/icon-3.png" alt="Icon" class="image">
+            <img src="images/icon-3.png" alt="Icon" class="image">
             <p>Поддержка</p>
             <button>Купить</button>
         </div>
@@ -37,17 +37,25 @@
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-solid fa-cart-shopping"></i>
-    </div>   
-   <form name="contact" netlify class="forms">
-        <p>
-          <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+    </div>    
+    <section class="contact-form">
+        <form action="#" method="post">
+            <div class="form-row">
+                <div>
+                    <input type="text" id="name" name="name" required placeholder="Имя">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+            </div>
+    
+            <textarea id="message" name="message" rows="4" required placeholder="Cообщение"></textarea>
+    
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <div class = "copyright"> 
+        <i class="fa-solid fa-copyright"></i> Все права защищены.
+    </div>
 </body>
 </html>

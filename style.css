@@ -71,7 +71,7 @@ button:hover {
 }
 
 button:active {
-    transform: scale(0.95); /* Лёгкое сжатие при клике */
+    transform: scale(0.95);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 .fateev {
@@ -95,18 +95,72 @@ header p {
 .cart-icons {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Расстояние между иконками */
-    margin-top: 2rem; /* Отступ сверху от карточек */
+    gap: 15rem; 
+    margin-top: 2rem;
 }
 
 .cart-icons i {
-    font-size: 2rem; /* Размер иконки */
-    color: #333; /* Цвет иконки */
+    font-size: 4rem; 
+    color: #1d4c80; 
     transition: transform 0.3s, color 0.3s;
 }
 
 .cart-icons i:hover {
-    transform: scale(1.2); /* Эффект увеличения при наведении */
-    color: #ff5733; /* Цвет при наведении */
+    transform: scale(1.2); 
+    color: #011c38; 
 }
 
+.contact-form {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.form-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+.contact-form textarea {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1.7rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.contact-form button {
+    margin-top: 0.8rem;
+    width:100%
+}
+.contact-form textarea:focus,
+.contact-form input:focus {
+    border: 3px solid orange;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+}
+.copyright {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50px;
+}
+
+.copyright i {
+    margin-right: 5px;
+}
