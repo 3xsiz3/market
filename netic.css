@@ -259,3 +259,49 @@ header p {
 .copyright i {
     margin-right: 5px;
 }
+
+@keyframes slideInLeft {
+0% {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+  
+@keyframes slideInRight {
+0% {
+    transform: translateX(100px);
+    opacity: 0;
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+  
+@keyframes slideUpScale {
+0% {
+    transform: translateY(60px) scale(0.8);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+}
+  
+.image11 {
+    animation: slideInLeft 1s ease forwards;
+}
+  
+.image13 {
+    animation: slideInRight 1s ease forwards;
+}
+  
+.image12 {
+    animation: slideUpScale 1s ease forwards;
+}
+  
