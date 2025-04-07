@@ -262,7 +262,7 @@ header p {
 
 @keyframes slideInLeft {
 0% {
-    transform: translateX(-100px);
+    transform: translateX(200px);
     opacity: 0;
 }
 100% {
@@ -273,7 +273,7 @@ header p {
   
 @keyframes slideInRight {
 0% {
-    transform: translateX(100px);
+    transform: translateX(-200px);
     opacity: 0;
 }
 100% {
@@ -282,26 +282,95 @@ header p {
 }
 }
   
-@keyframes slideUpScale {
-0% {
-    transform: translateY(60px) scale(0.8);
-    opacity: 0;
-}
-100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-}
-}
-  
 .image11 {
-    animation: slideInLeft 1s ease forwards;
+    animation: slideInLeft 1.5s ease forwards;
 }
   
 .image13 {
-    animation: slideInRight 1s ease forwards;
+    animation: slideInRight 1.5s ease forwards;
 }
   
 .image12 {
     animation: slideUpScale 1s ease forwards;
 }
+
+.marquee {
+    display: flex;
+    text-align: center;
+    height: 50px;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
   
+.marquee p {
+    display: inline-block;
+    animation: marquee-scroll 12s linear infinite;
+    padding-left: 100%;
+    color: white;
+}
+
+  
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 123, 255, 0.4); 
+    background: linear-gradient(to bottom, #5c90c7, #0056b3); 
+}
+body {
+    opacity: 0;
+    animation: fadeInBody 1s ease forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeInBody {
+    to {
+        opacity: 1;
+    }
+}
+
+.why-us {
+    text-align: center;
+    margin: 5rem 0;
+}
+.why-us h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #0a3057;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.feature i {
+    font-size: 4rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+.feature:hover i {
+    transform: scale(1.2);
+    color: orange;
+}
