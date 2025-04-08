@@ -333,7 +333,7 @@ header p {
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 123, 255, 0.4); 
     background: linear-gradient(to bottom, #5c90c7, #0056b3); 
 }
-/* body {
+body {
     opacity: 0;
     animation: fadeInBody 1s ease forwards;
     animation-delay: 0.5s;
@@ -342,7 +342,7 @@ header p {
     to {
         opacity: 1;
     }
-} */
+}
 
 .why-us {
     text-align: center;
@@ -416,3 +416,35 @@ font-size: 2.5rem;
     100% { box-shadow: 0 0 25px red; }
   }
   
+  .subscribe-form {
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    background: #fefefe;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .subscribe-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0a3057;
+  }
+  
+  .subscribe-form input[type="email"],
+  .subscribe-form select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .subscribe-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
