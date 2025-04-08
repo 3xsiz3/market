@@ -212,6 +212,7 @@ header p {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    
 }
 .form-row {
     display: flex;
@@ -333,7 +334,7 @@ header p {
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 123, 255, 0.4); 
     background: linear-gradient(to bottom, #5c90c7, #0056b3); 
 }
-body {
+/* body {
     opacity: 0;
     animation: fadeInBody 1s ease forwards;
     animation-delay: 0.5s;
@@ -342,7 +343,7 @@ body {
     to {
         opacity: 1;
     }
-}
+} */
 
 .why-us {
     text-align: center;
@@ -374,3 +375,43 @@ body {
     transform: scale(1.2);
     color: orange;
 }
+
+.sale-today {
+    text-align: center;
+    margin: 4rem auto;
+    transform: translateY(-70rem) scale(0.8) translateX(20rem);
+    margin-bottom: -70rem;
+  }
+  
+  .sale-today h2 {
+display:flex;
+justify-content: right;
+margin-right: 20rem;
+font-size: 2.5rem;
+  }
+
+  .sale-cards {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .sale-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255, 100, 0, 0.5);
+    animation: pulse 1.5s infinite alternate;
+  }
+
+  .sale-card img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 5px orange; }
+    100% { box-shadow: 0 0 25px red; }
+  }
+  
