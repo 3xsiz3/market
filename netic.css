@@ -212,7 +212,6 @@ header p {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    
 }
 .form-row {
     display: flex;
@@ -378,9 +377,11 @@ header p {
 
 .sale-today {
     text-align: center;
-    margin: 4rem auto;
-    transform: translateY(-70rem) scale(0.8) translateX(20rem);
-    margin-bottom: -70rem;
+    position: absolute;
+    top: 7rem;
+    left:15rem;
+    width: 100%;
+    transform: scale(0.8);
   }
   
   .sale-today h2 {
