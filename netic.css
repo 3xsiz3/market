@@ -448,3 +448,136 @@ font-size: 2.5rem;
   .subscribe-form input[type="checkbox"] {
     margin-right: 0.5rem;
   }
+/* Адаптация под экраны с шириной меньше 768px (мобильные устройства) */
+@media (max-width: 768px) {
+    /* Уменьшаем размер шрифта на экранах мобильных */
+    body {
+        font-size: 1.2rem;
+    }
+
+    /* Меню: уменьшаем отступы и размер шрифта */
+    .top-menu {
+        padding: 1rem;
+        flex-direction: column; /* Меню будет вертикальным */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .top-menu ul {
+        gap: 1.5rem;
+    }
+
+    .top-menu a {
+        font-size: 2rem; /* Уменьшаем шрифт для мобильных */
+    }
+
+    /* Карточки */
+    .card-container {
+        gap: 1rem; /* Уменьшаем расстояние между карточками */
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%; /* Делаем карточки на всю ширину */
+        margin-bottom: 2rem;
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Плавное увеличение */
+    }
+
+    /* Страница товара: картинка и текст */
+    .image {
+        width: 60%; /* Уменьшаем картинку на мобильных */
+        height: auto;
+    }
+
+    /* Смена размера кнопок */
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    /* Форма подписки */
+    .subscribe-form {
+        width: 100%;
+        top: 50%;
+        right: 0;
+        padding: 1.5rem;
+        box-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
+    }
+
+    .subscribe-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-form input[type="email"] {
+        font-size: 1.4rem;
+    }
+
+    .subscribe-form button {
+        font-size: 1.4rem;
+    }
+
+    /* Анимация текста */
+    .marquee p {
+        font-size: 1.6rem;
+    }
+
+    /* Уменьшаем размер иконок */
+    .cart-icons i {
+        font-size: 2.5rem;
+    }
+
+    /* Форма контактной связи */
+    .contact-form {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 1.5rem;
+    }
+}
+
+/* Адаптация для экранов с шириной меньше 480px (очень маленькие экраны, телефоны) */
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem; /* Ещё меньше шрифт */
+    }
+
+    /* Уменьшаем меню */
+    .top-menu a {
+        font-size: 1.8rem;
+    }
+
+    /* Карточки: теперь в 2 колонки */
+    .card-container {
+        gap: 1rem;
+    }
+
+    .card {
+        width: 48%; /* Делаем карточки в 2 колонки */
+    }
+
+    /* Форма подписки */
+    .subscribe-form {
+        width: 90%;
+        top: 10%;
+        right: 0;
+        padding: 1rem;
+    }
+
+    .subscribe-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .subscribe-form button {
+        font-size: 1.4rem;
+    }
+
+    /* Форма контактов */
+    .contact-form textarea, .contact-form input {
+        font-size: 1.4rem;
+    }
+}
+
