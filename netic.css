@@ -425,6 +425,7 @@ font-size: 2.5rem;
     padding: 2rem;
     box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
     width: 400px;
+    /* margin: 4rem auto; */
     text-align: center;
   }
   
@@ -448,7 +449,8 @@ font-size: 2.5rem;
   .subscribe-form input[type="checkbox"] {
     margin-right: 0.5rem;
   }
-@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     header {
       flex-direction: column;
       align-items: center;
@@ -546,5 +548,3 @@ font-size: 2.5rem;
     }
   }
   
-
-
